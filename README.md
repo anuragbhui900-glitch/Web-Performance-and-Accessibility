@@ -1,99 +1,84 @@
-Week 3 - JavaScript Interactive Webpage
+# Week 4: Web Performance and Accessibility
 
-Project Title
+**Project:** Anurag - Frontend Developer Portfolio  
+**Internship:** YuvaIntern Frontend Web Developer Internship  
+**Technologies:** HTML5, CSS3 and JavaScript
 
-Interactive Portfolio Website using HTML, CSS and JavaScript
+## 1. Project Overview
 
-Objective
+This project improves a personal portfolio website by focusing on
+web performance, semantic HTML, responsive design and accessibility.
+The goal is to create a website that is easier to navigate, maintain
+and use on different devices.
 
-The objective of this project is to improve the Week 2 responsive webpage by integrating JavaScript to create an interactive and user-friendly web experience.
+## 2. Performance Improvements
 
-Technologies Used
+- Used a system font stack to avoid additional font download requests.
+- Used a local CSS file and deferred JavaScript loading.
+- Avoided unnecessary external libraries and JavaScript dependencies.
+- Used reusable CSS variables to reduce duplicated styling.
+- Used efficient CSS selectors and simplified layout rules.
+- Used responsive CSS Grid and Flexbox.
+- Avoided unnecessary images and large media files.
+- Kept the document structure simple and lightweight.
 
-- HTML5
-- CSS3
-- JavaScript
-- Google Fonts
+## 3. Accessibility Improvements
 
-Features
+- Added the HTML language attribute.
+- Used semantic header, nav, main, section and footer elements.
+- Added a skip-to-main-content link.
+- Used a logical heading hierarchy.
+- Added labels to all form controls.
+- Added required fields and built-in HTML form validation.
+- Used ARIA attributes for the mobile navigation state.
+- Used a live status region to announce form feedback.
+- Added visible keyboard focus indicators.
+- Supported keyboard navigation and the Escape key.
+- Respected the user's reduced-motion preference.
+- Used readable text, spacing and contrasting interface colors.
 
-1. Mobile Navigation Menu
+## 4. Responsive Design
 
-A JavaScript-powered hamburger menu is added for smaller screen sizes. Users can open and close the navigation menu easily.
+The webpage adapts to different screen sizes using CSS media queries.
+The project uses flexible widths, responsive typography, CSS Grid
+and Flexbox. On small screens, the navigation changes into a menu.
 
-2. Light/Dark Mode
+## 5. Testing Tools
 
-A theme toggle button allows users to switch between dark mode and light mode. The selected theme is stored using "localStorage", so the preference remains after refreshing the page.
+The following tools can be used to evaluate the project:
 
-3. Active Navigation Link
+1. Google Lighthouse: performance, accessibility, best practices
+   and search-engine optimization.
+2. WAVE: accessibility errors and contrast-related warnings.
+3. axe DevTools: automated accessibility checks.
+4. Chrome DevTools: console errors, network requests and page loading.
+5. Keyboard testing: Tab, Shift+Tab, Enter, Space and Escape.
 
-JavaScript automatically detects the section currently visible on the screen and highlights the corresponding navigation link.
+## 6. Testing Procedure
 
-4. Scroll Reveal Animation
+1. Open index.html in a browser using VS Code Live Server.
+2. Test the webpage at desktop, tablet and mobile widths.
+3. Navigate the webpage using only the keyboard.
+4. Check that the mobile menu opens and closes correctly.
+5. Submit the contact form with empty and valid fields.
+6. Run Lighthouse in Chrome DevTools.
+7. Run WAVE or axe DevTools and review the reported issues.
+8. Fix any confirmed issues and run the tests again.
+9. Record the actual test scores and remaining issues.
 
-Sections and project cards smoothly appear when the user scrolls down the webpage, improving the overall user experience.
+## 7. Learning Outcomes
 
-5. Back-to-Top Button
+Through this task, I learned how semantic HTML improves document
+structure, how CSS can be organized for maintainability, and how
+JavaScript can provide accessible interactions. I also learned that
+performance optimization and accessibility require testing rather
+than assumptions.
 
-A back-to-top button appears after scrolling down the page. Clicking it smoothly takes the user back to the top.
+## 8. Conclusion
 
-6. Interactive Project Button
+This project demonstrates a lightweight, responsive and accessible
+portfolio website. It includes keyboard-friendly navigation, form
+validation, reusable CSS and documentation of performance testing.
 
-The project buttons use JavaScript to display an interactive message when clicked.
-
-7. Dynamic Footer Year
-
-JavaScript automatically displays the current year in the footer, eliminating the need to update it manually.
-
-Project Structure
-
-Week-3-Project/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-
-How to Run the Project
-
-1. Download or clone the project.
-2. Open the project folder in Visual Studio Code.
-3. Make sure "index.html", "style.css", and "script.js" are in the same folder.
-4. Open "index.html" in a web browser.
-5. For a better development experience, use the Live Server extension in VS Code.
-
-JavaScript Integration
-
-The JavaScript file is connected to the HTML using:
-
-<script src="script.js"></script>
-
-The JavaScript handles user interactions such as navigation, theme switching, scrolling effects, buttons, and dynamic content.
-
-Responsive Design
-
-The website is designed to work across different screen sizes, including:
-
-- Desktop
-- Laptop
-- Tablet
-- Mobile
-
-CSS media queries are used to adjust the layout for smaller screens.
-
-Learning Outcomes
-
-Through this project, I learned how to:
-
-- Connect JavaScript with HTML and CSS.
-- Select and manipulate DOM elements.
-- Add and remove CSS classes using JavaScript.
-- Handle click and scroll events.
-- Use "localStorage" to save user preferences.
-- Create interactive navigation.
-- Implement smooth scrolling and animations.
-- Build a more engaging responsive webpage.
-
-Conclusion
-
-This Week 3 project successfully integrates JavaScript into the responsive portfolio website created during Week 2. The added interactions improve usability, navigation, accessibility, and overall user experience while maintaining the original responsive design.
+Actual Lighthouse scores and accessibility results must be measured
+in the browser before final submission.
